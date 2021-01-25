@@ -3,13 +3,16 @@ server:
   port: 8081
 
 spring:
+  profiles:
+    active: native
   cloud:
     config:
-      git:
-        uri: https://github.com/Agusilveira/Store.git
-        searchPath: config-data
-        username: ${GIT_USER}
-        password: ${GIT_PASSWORD}
+      server:
+        git:
+          uri: https://github.com/Agusilveira/Store.git
+          searchPath: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
   security:
     user:
       name: root
