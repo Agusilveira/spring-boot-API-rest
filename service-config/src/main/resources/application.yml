@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: https://github.com/Agusilveira/spring-boot-API-rest.git
-          searchPath: config-data
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:
