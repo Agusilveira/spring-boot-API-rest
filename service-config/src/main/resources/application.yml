@@ -1,15 +1,15 @@
 #Application Configuration
 server:
   port: 8081
-
+  error:
+    include-message: always
+    include-binding-errors: always
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/Agusilveira/Store.git
+          uri: https://github.com/Agusilveira/spring-boot-API-rest.git
           searchPath: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
